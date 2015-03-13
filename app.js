@@ -13,6 +13,8 @@ app.get('/cb', function(req, res) {
     if(query['hub.verify_token']==="ikickass"){
       res.send(query['hub.challenge']);
     }
+  } else {
+    res.sendd('gg');
   }
 });
 
