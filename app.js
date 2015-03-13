@@ -14,7 +14,7 @@ app.get('/cb', function(req, res) {
       res.send(query['hub.challenge']);
     }
   } else {
-    res.sendd('gg');
+    res.send('gg');
   }
 });
 
