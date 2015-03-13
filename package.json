@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juancjara/test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juancjara/test/issues"
+  },
+  "homepage": "https://github.com/juancjara/test",
+  "dependencies": {
+    "express": "^4.12.2",
+    "url": "^0.10.3"
+  }
+}
