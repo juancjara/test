@@ -1,9 +1,13 @@
 var express = require("express");
 var url = require('url');
+var bodyParser = require('body-parser');
 
 var app = express(); 
+app.use(bodyParser.json());
 
-app.get('/cb', function(req, res) {
+var pathUrl = '/cb';
+
+app.get(pathUrl, function(req, res) {
   console.log('aca')
   console.log(req.url);
   var url_parts = url.parse(req.url,true);
@@ -16,6 +20,12 @@ app.get('/cb', function(req, res) {
   } else {
     res.send('gg');
   }
+});
+
+app.post(pathUrl, function(req, res) {
+  console.log(req.body);
+  console.log(JSON.stringify(req.body));
+  console.log(JSON.parse(JSON.stringify(req.body)));
 });
 
 var port = 1523;
